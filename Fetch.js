@@ -1,4 +1,13 @@
-fetch("http://interview.plaid.com/data/footer.json")
+const myHeaders = new Headers();
+
+const myRequest = new Request("http://interview.plaid.com/data/footer.json", {
+  method: "GET",
+  headers: myHeaders,
+  mode: "cors",
+  cache: "default"
+});
+
+fetch(myRequest)
   .then(function(resp) {
     console.log(resp, "resp");
     return resp.text();

@@ -110,13 +110,15 @@ img {
 
 .showcase-clients {
   position: relative;
-  display: flex;
-  /* grid-template-columns: repeat(5, 1fr); */
-  /* grid-gap: 1rem; */
-  /* justify-content: space-evenly; */
-  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  justify-content: space-evenly;
+  max-width: 70%;
   align-content: center;
-  margin-left: 10%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
 .three-images {
@@ -135,6 +137,8 @@ img {
 
 .showcase-clients img {
   padding: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .showcase-content h1 {
@@ -339,4 +343,30 @@ img {
   border-radius: 0.3rem;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.footer {
+  background: #212b33;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+}
+
+.bottom p {
+  justify-self: start;
+}
+
+.button-one {
+  justify-self: end;
+}
+
+.button-two {
+  justify-self: start;
 }
