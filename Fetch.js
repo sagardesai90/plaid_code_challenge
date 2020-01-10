@@ -1,10 +1,12 @@
-const myHeaders = new Headers();
+// const myHeaders = new Headers();
 
 const myRequest = new Request("http://interview.plaid.com/data/footer.json", {
   method: "GET",
-  headers: myHeaders,
-  mode: "cors",
-  cache: "default"
+  headers: {
+    "Content-Type": "application/json"
+    // "Access-Control-Allow-Origin": "http://127.0.0.1:5500/"
+  },
+  mode: "cors"
 });
 
 fetch(myRequest)

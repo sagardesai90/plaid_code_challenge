@@ -20,15 +20,15 @@
       <div class="showcase-content">
         <img src="assets/hero.png" alt="hero" />
         <div class="tagline">
-          <h1>
+          <h2>
             Data To Power Marketing <br />
             Campaigns.
-          </h1>
-          <p>
+          </h2>
+          <h3>
             Clearbit is behind some of the world's most advanced marketing
             teams.
-          </p>
-          <a href="" class="btn btn-xl">
+          </h3>
+          <a href="" class="btn btn-lg">
             Sign Up
           </a>
         </div>
@@ -131,6 +131,16 @@
         </div>
       </div>
     </header>
-    <script src="Fetch.js"></script>
+    <!-- <script src="Fetch.js"></script> -->
+    <script>
+      (async () => {
+        const res = await fetch("http://interview.plaid.com/data/footer.json", {
+          method: "GET",
+          mode: "cors"
+        });
+
+        console.log(await res.json());
+      })();
+    </script>
   </body>
 </html>
