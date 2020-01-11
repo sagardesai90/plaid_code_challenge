@@ -35,11 +35,15 @@
       </div>
       <div class="clients">
         <div class="showcase-clients">
-          <img src="assets/client-airbnb.png" alt="airbnb" />
-          <img src="assets/client-asana.png" alt="asana" />
+          <img class="client-img" src="assets/client-airbnb.png" alt="airbnb" />
+          <img class="client-img" src="assets/client-asana.png" alt="asana" />
           <img src="assets/client-stripe.png" alt="stripe" />
-          <img src="assets/client-slack.png" alt="slack" />
-          <img src="assets/client-segment.png" alt="segment" />
+          <img class="client-img" src="assets/client-slack.png" alt="slack" />
+          <img
+            class="client-img segment"
+            src="assets/client-segment.png"
+            alt="segment"
+          />
         </div>
       </div>
       <div class="qualified-leads">
@@ -122,7 +126,8 @@
         </div>
       </div>
       <div class="footer">
-        <h1>Footer</h1>
+        <div id="footer-head" class="footer-head"></div>
+        <div id="footer-cols" class="footer-cols"></div>
         <div class="bottom">
           <img src="assets/logo.png" />
           <p>All Rights Reserved 2016</p>
@@ -131,16 +136,6 @@
         </div>
       </div>
     </header>
-    <!-- <script src="Fetch.js"></script> -->
-    <script>
-      (async () => {
-        const res = await fetch("http://interview.plaid.com/data/footer.json", {
-          method: "GET",
-          mode: "cors"
-        });
-
-        console.log(await res.json());
-      })();
-    </script>
+    <script src="Fetch.js"></script>
   </body>
 </html>
